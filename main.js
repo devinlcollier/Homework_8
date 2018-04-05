@@ -24,6 +24,10 @@ if (arg.startsWith("my-tweets")) {
     movie_this(process.argv);
 } else if (arg.startsWith("do-what-it-says")) {
     fs.readFile("random.txt", "utf8", (err, data) => {
+    	if(err)
+    	{
+    		throw err;
+    	}
         let args = [0, 0].concat(data.split(" "));
         if (args[2].startsWith("my-tweets")) {
             my_tweets();
