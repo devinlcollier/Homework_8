@@ -1,5 +1,5 @@
 # Homework_8
-Does Stuff. Logs all out put to log.txt
+Does Stuff. Logs all output to log.txt
 
 ### Commands
 
